@@ -1,9 +1,10 @@
-export interface ContadorProps {
+export interface ContadorProps{
     contador: number
-    onIncrement: () => void
+    onIncrement:()=> void
 }
-export default function Contador({contador, onIncrement}:ContadorProps) {
-    return (
+
+export default function Contador ({contador, onIncrement}:ContadorProps){
+    return(
         <div>
             <div>{contador}</div>
             <button onClick={onIncrement}>
